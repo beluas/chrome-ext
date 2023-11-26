@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Assertion Hub",
+  "description": "Never miss your data again",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["tabs"],
+  "content_scripts": [
+    { "js": ["scripts/content.js"], "matches": ["<all_urls>"] }
+  ]
+}
